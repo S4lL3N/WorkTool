@@ -66,9 +66,9 @@
             this.CallerLabel.AutoSize = true;
             this.CallerLabel.Font = new System.Drawing.Font("Sea-Dog Italic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CallerLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.CallerLabel.Location = new System.Drawing.Point(34, 40);
+            this.CallerLabel.Location = new System.Drawing.Point(38, 50);
             this.CallerLabel.Name = "CallerLabel";
-            this.CallerLabel.Size = new System.Drawing.Size(153, 22);
+            this.CallerLabel.Size = new System.Drawing.Size(187, 27);
             this.CallerLabel.TabIndex = 0;
             this.CallerLabel.Text = "Caller:";
             // 
@@ -83,9 +83,10 @@
             this.ProbSolPanel.Controls.Add(this.SolutionRichTextBox);
             this.ProbSolPanel.Controls.Add(this.SolutionLabel);
             this.ProbSolPanel.Controls.Add(this.ProblemLabel);
-            this.ProbSolPanel.Location = new System.Drawing.Point(12, 141);
+            this.ProbSolPanel.Location = new System.Drawing.Point(14, 176);
+            this.ProbSolPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ProbSolPanel.Name = "ProbSolPanel";
-            this.ProbSolPanel.Size = new System.Drawing.Size(789, 504);
+            this.ProbSolPanel.Size = new System.Drawing.Size(888, 630);
             this.ProbSolPanel.TabIndex = 1;
             // 
             // Batch_textBox
@@ -93,9 +94,10 @@
             this.Batch_textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.Batch_textBox.Font = new System.Drawing.Font("Conthrax Sb", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Batch_textBox.ForeColor = System.Drawing.Color.White;
-            this.Batch_textBox.Location = new System.Drawing.Point(601, 17);
+            this.Batch_textBox.Location = new System.Drawing.Point(676, 21);
+            this.Batch_textBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Batch_textBox.Name = "Batch_textBox";
-            this.Batch_textBox.Size = new System.Drawing.Size(178, 31);
+            this.Batch_textBox.Size = new System.Drawing.Size(200, 36);
             this.Batch_textBox.TabIndex = 2;
             this.Batch_textBox.TextChanged += new System.EventHandler(this.Batch_textBox_TextChanged);
             this.Batch_textBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Batch_textBox_MouseDown);
@@ -105,9 +107,10 @@
             this.Inst_textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.Inst_textBox.Font = new System.Drawing.Font("Conthrax Sb", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Inst_textBox.ForeColor = System.Drawing.Color.White;
-            this.Inst_textBox.Location = new System.Drawing.Point(373, 17);
+            this.Inst_textBox.Location = new System.Drawing.Point(420, 21);
+            this.Inst_textBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Inst_textBox.Name = "Inst_textBox";
-            this.Inst_textBox.Size = new System.Drawing.Size(222, 31);
+            this.Inst_textBox.Size = new System.Drawing.Size(249, 36);
             this.Inst_textBox.TabIndex = 2;
             this.Inst_textBox.TextChanged += new System.EventHandler(this.Inst_textBox_TextChanged);
             this.Inst_textBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Inst_textBox_MouseDown);
@@ -119,9 +122,10 @@
             this.ProblemRichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.ProblemRichTextBox.Font = new System.Drawing.Font("Conthrax Sb", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProblemRichTextBox.ForeColor = System.Drawing.Color.White;
-            this.ProblemRichTextBox.Location = new System.Drawing.Point(26, 61);
+            this.ProblemRichTextBox.Location = new System.Drawing.Point(29, 76);
+            this.ProblemRichTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ProblemRichTextBox.Name = "ProblemRichTextBox";
-            this.ProblemRichTextBox.Size = new System.Drawing.Size(753, 118);
+            this.ProblemRichTextBox.Size = new System.Drawing.Size(847, 146);
             this.ProblemRichTextBox.TabIndex = 1;
             this.ProblemRichTextBox.Text = "";
             this.ProblemRichTextBox.TextChanged += new System.EventHandler(this.ProblemRichTextBox_TextChanged);
@@ -134,9 +138,10 @@
             this.SolutionRichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.SolutionRichTextBox.Font = new System.Drawing.Font("Conthrax Sb", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SolutionRichTextBox.ForeColor = System.Drawing.Color.White;
-            this.SolutionRichTextBox.Location = new System.Drawing.Point(26, 235);
+            this.SolutionRichTextBox.Location = new System.Drawing.Point(29, 294);
+            this.SolutionRichTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SolutionRichTextBox.Name = "SolutionRichTextBox";
-            this.SolutionRichTextBox.Size = new System.Drawing.Size(753, 266);
+            this.SolutionRichTextBox.Size = new System.Drawing.Size(847, 332);
             this.SolutionRichTextBox.TabIndex = 1;
             this.SolutionRichTextBox.Text = "";
             this.SolutionRichTextBox.TextChanged += new System.EventHandler(this.SolutionRichTextBox_TextChanged);
@@ -146,9 +151,9 @@
             this.SolutionLabel.AutoSize = true;
             this.SolutionLabel.Font = new System.Drawing.Font("Sea-Dog Italic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SolutionLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.SolutionLabel.Location = new System.Drawing.Point(22, 198);
+            this.SolutionLabel.Location = new System.Drawing.Point(25, 248);
             this.SolutionLabel.Name = "SolutionLabel";
-            this.SolutionLabel.Size = new System.Drawing.Size(175, 22);
+            this.SolutionLabel.Size = new System.Drawing.Size(215, 27);
             this.SolutionLabel.TabIndex = 0;
             this.SolutionLabel.Text = "Solution";
             // 
@@ -157,9 +162,9 @@
             this.ProblemLabel.AutoSize = true;
             this.ProblemLabel.Font = new System.Drawing.Font("Sea-Dog Italic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProblemLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.ProblemLabel.Location = new System.Drawing.Point(22, 26);
+            this.ProblemLabel.Location = new System.Drawing.Point(25, 32);
             this.ProblemLabel.Name = "ProblemLabel";
-            this.ProblemLabel.Size = new System.Drawing.Size(177, 22);
+            this.ProblemLabel.Size = new System.Drawing.Size(216, 27);
             this.ProblemLabel.TabIndex = 0;
             this.ProblemLabel.Text = "Problem";
             // 
@@ -177,9 +182,10 @@
             this.StateCountyPanel.Controls.Add(this.NCRadioButton);
             this.StateCountyPanel.Controls.Add(this.KYRadioButton);
             this.StateCountyPanel.Controls.Add(this.ARRadioButton);
-            this.StateCountyPanel.Location = new System.Drawing.Point(16, 80);
+            this.StateCountyPanel.Location = new System.Drawing.Point(18, 100);
+            this.StateCountyPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.StateCountyPanel.Name = "StateCountyPanel";
-            this.StateCountyPanel.Size = new System.Drawing.Size(792, 71);
+            this.StateCountyPanel.Size = new System.Drawing.Size(891, 89);
             this.StateCountyPanel.TabIndex = 2;
             // 
             // VAComboBox
@@ -188,9 +194,10 @@
             this.VAComboBox.Items.AddRange(new object[] {
             "Scott",
             "Smyth"});
-            this.VAComboBox.Location = new System.Drawing.Point(657, 31);
+            this.VAComboBox.Location = new System.Drawing.Point(739, 39);
+            this.VAComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.VAComboBox.Name = "VAComboBox";
-            this.VAComboBox.Size = new System.Drawing.Size(121, 24);
+            this.VAComboBox.Size = new System.Drawing.Size(136, 28);
             this.VAComboBox.TabIndex = 1;
             this.VAComboBox.SelectedIndexChanged += new System.EventHandler(this.VAComboBox_SelectedIndexChanged);
             // 
@@ -252,9 +259,10 @@
             "White",
             "Williamson",
             "Wilson"});
-            this.TNComboBox.Location = new System.Drawing.Point(530, 31);
+            this.TNComboBox.Location = new System.Drawing.Point(596, 39);
+            this.TNComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TNComboBox.Name = "TNComboBox";
-            this.TNComboBox.Size = new System.Drawing.Size(121, 24);
+            this.TNComboBox.Size = new System.Drawing.Size(136, 28);
             this.TNComboBox.TabIndex = 1;
             this.TNComboBox.SelectedIndexChanged += new System.EventHandler(this.TNComboBox_SelectedIndexChanged);
             // 
@@ -272,9 +280,10 @@
             "Laurens",
             "Spartanburg",
             "York"});
-            this.SCComboBox.Location = new System.Drawing.Point(403, 31);
+            this.SCComboBox.Location = new System.Drawing.Point(453, 39);
+            this.SCComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SCComboBox.Name = "SCComboBox";
-            this.SCComboBox.Size = new System.Drawing.Size(121, 24);
+            this.SCComboBox.Size = new System.Drawing.Size(136, 28);
             this.SCComboBox.TabIndex = 1;
             this.SCComboBox.SelectedIndexChanged += new System.EventHandler(this.SCComboBox_SelectedIndexChanged);
             // 
@@ -297,9 +306,10 @@
             "Robeson",
             "Transylvania",
             "Yancy"});
-            this.NCComboBox.Location = new System.Drawing.Point(276, 31);
+            this.NCComboBox.Location = new System.Drawing.Point(310, 39);
+            this.NCComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NCComboBox.Name = "NCComboBox";
-            this.NCComboBox.Size = new System.Drawing.Size(121, 24);
+            this.NCComboBox.Size = new System.Drawing.Size(136, 28);
             this.NCComboBox.TabIndex = 1;
             this.NCComboBox.SelectedIndexChanged += new System.EventHandler(this.NCComboBox_SelectedIndexChanged);
             // 
@@ -315,9 +325,10 @@
             "Kenton",
             "Nelson",
             "Owen"});
-            this.KYComboBox.Location = new System.Drawing.Point(149, 31);
+            this.KYComboBox.Location = new System.Drawing.Point(168, 39);
+            this.KYComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.KYComboBox.Name = "KYComboBox";
-            this.KYComboBox.Size = new System.Drawing.Size(121, 24);
+            this.KYComboBox.Size = new System.Drawing.Size(136, 28);
             this.KYComboBox.TabIndex = 1;
             this.KYComboBox.SelectedIndexChanged += new System.EventHandler(this.KYComboBox_SelectedIndexChanged);
             // 
@@ -347,9 +358,10 @@
             "Stuttgart",
             "Van Buren",
             "White"});
-            this.ARComboBox.Location = new System.Drawing.Point(22, 31);
+            this.ARComboBox.Location = new System.Drawing.Point(25, 39);
+            this.ARComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ARComboBox.Name = "ARComboBox";
-            this.ARComboBox.Size = new System.Drawing.Size(121, 24);
+            this.ARComboBox.Size = new System.Drawing.Size(136, 28);
             this.ARComboBox.TabIndex = 1;
             this.ARComboBox.SelectedIndexChanged += new System.EventHandler(this.ARComboBox_SelectedIndexChanged);
             // 
@@ -358,9 +370,10 @@
             this.VARadioButton.AutoSize = true;
             this.VARadioButton.Font = new System.Drawing.Font("Airstrike", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.VARadioButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.VARadioButton.Location = new System.Drawing.Point(692, 3);
+            this.VARadioButton.Location = new System.Drawing.Point(778, 4);
+            this.VARadioButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.VARadioButton.Name = "VARadioButton";
-            this.VARadioButton.Size = new System.Drawing.Size(59, 22);
+            this.VARadioButton.Size = new System.Drawing.Size(71, 26);
             this.VARadioButton.TabIndex = 0;
             this.VARadioButton.TabStop = true;
             this.VARadioButton.Text = "VA";
@@ -372,9 +385,10 @@
             this.TNRadioButton.AutoSize = true;
             this.TNRadioButton.Font = new System.Drawing.Font("Airstrike", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TNRadioButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.TNRadioButton.Location = new System.Drawing.Point(567, 3);
+            this.TNRadioButton.Location = new System.Drawing.Point(638, 4);
+            this.TNRadioButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TNRadioButton.Name = "TNRadioButton";
-            this.TNRadioButton.Size = new System.Drawing.Size(54, 22);
+            this.TNRadioButton.Size = new System.Drawing.Size(66, 26);
             this.TNRadioButton.TabIndex = 0;
             this.TNRadioButton.TabStop = true;
             this.TNRadioButton.Text = "TN";
@@ -386,9 +400,10 @@
             this.SCRadioButton.AutoSize = true;
             this.SCRadioButton.Font = new System.Drawing.Font("Airstrike", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SCRadioButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.SCRadioButton.Location = new System.Drawing.Point(436, 3);
+            this.SCRadioButton.Location = new System.Drawing.Point(490, 4);
+            this.SCRadioButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SCRadioButton.Name = "SCRadioButton";
-            this.SCRadioButton.Size = new System.Drawing.Size(55, 22);
+            this.SCRadioButton.Size = new System.Drawing.Size(66, 26);
             this.SCRadioButton.TabIndex = 0;
             this.SCRadioButton.TabStop = true;
             this.SCRadioButton.Text = "SC";
@@ -400,9 +415,10 @@
             this.NCRadioButton.AutoSize = true;
             this.NCRadioButton.Font = new System.Drawing.Font("Airstrike", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NCRadioButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.NCRadioButton.Location = new System.Drawing.Point(308, 3);
+            this.NCRadioButton.Location = new System.Drawing.Point(346, 4);
+            this.NCRadioButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.NCRadioButton.Name = "NCRadioButton";
-            this.NCRadioButton.Size = new System.Drawing.Size(55, 22);
+            this.NCRadioButton.Size = new System.Drawing.Size(66, 26);
             this.NCRadioButton.TabIndex = 0;
             this.NCRadioButton.TabStop = true;
             this.NCRadioButton.Text = "NC";
@@ -414,9 +430,10 @@
             this.KYRadioButton.AutoSize = true;
             this.KYRadioButton.Font = new System.Drawing.Font("Airstrike", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.KYRadioButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.KYRadioButton.Location = new System.Drawing.Point(182, 3);
+            this.KYRadioButton.Location = new System.Drawing.Point(205, 4);
+            this.KYRadioButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.KYRadioButton.Name = "KYRadioButton";
-            this.KYRadioButton.Size = new System.Drawing.Size(56, 22);
+            this.KYRadioButton.Size = new System.Drawing.Size(68, 26);
             this.KYRadioButton.TabIndex = 0;
             this.KYRadioButton.TabStop = true;
             this.KYRadioButton.Text = "KY";
@@ -428,9 +445,10 @@
             this.ARRadioButton.AutoSize = true;
             this.ARRadioButton.Font = new System.Drawing.Font("Airstrike", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ARRadioButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.ARRadioButton.Location = new System.Drawing.Point(51, 3);
+            this.ARRadioButton.Location = new System.Drawing.Point(57, 4);
+            this.ARRadioButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ARRadioButton.Name = "ARRadioButton";
-            this.ARRadioButton.Size = new System.Drawing.Size(58, 22);
+            this.ARRadioButton.Size = new System.Drawing.Size(70, 26);
             this.ARRadioButton.TabIndex = 0;
             this.ARRadioButton.TabStop = true;
             this.ARRadioButton.Text = "AR";
@@ -442,9 +460,10 @@
             this.CallerTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.CallerTextBox.Font = new System.Drawing.Font("Conthrax Sb", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CallerTextBox.ForeColor = System.Drawing.Color.White;
-            this.CallerTextBox.Location = new System.Drawing.Point(218, 34);
+            this.CallerTextBox.Location = new System.Drawing.Point(245, 42);
+            this.CallerTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.CallerTextBox.Name = "CallerTextBox";
-            this.CallerTextBox.Size = new System.Drawing.Size(309, 35);
+            this.CallerTextBox.Size = new System.Drawing.Size(347, 41);
             this.CallerTextBox.TabIndex = 3;
             this.CallerTextBox.TextChanged += new System.EventHandler(this.CallerTextBox_TextChanged);
             // 
@@ -453,9 +472,9 @@
             this.TimerLabel.AutoSize = true;
             this.TimerLabel.Font = new System.Drawing.Font("Sea-Dog Italic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TimerLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.TimerLabel.Location = new System.Drawing.Point(632, 20);
+            this.TimerLabel.Location = new System.Drawing.Point(711, 25);
             this.TimerLabel.Name = "TimerLabel";
-            this.TimerLabel.Size = new System.Drawing.Size(158, 22);
+            this.TimerLabel.Size = new System.Drawing.Size(194, 27);
             this.TimerLabel.TabIndex = 5;
             this.TimerLabel.Text = "00:00:00";
             // 
@@ -470,9 +489,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonPanel.Controls.Add(this.SaveButton);
             this.ButtonPanel.Controls.Add(this.ClearButton);
-            this.ButtonPanel.Location = new System.Drawing.Point(18, 651);
+            this.ButtonPanel.Location = new System.Drawing.Point(20, 814);
+            this.ButtonPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ButtonPanel.Name = "ButtonPanel";
-            this.ButtonPanel.Size = new System.Drawing.Size(788, 58);
+            this.ButtonPanel.Size = new System.Drawing.Size(886, 72);
             this.ButtonPanel.TabIndex = 4;
             // 
             // SaveButton
@@ -484,9 +504,10 @@
             this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveButton.Font = new System.Drawing.Font("Airstrike", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.SaveButton.Location = new System.Drawing.Point(657, 8);
+            this.SaveButton.Location = new System.Drawing.Point(739, 10);
+            this.SaveButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(121, 47);
+            this.SaveButton.Size = new System.Drawing.Size(136, 59);
             this.SaveButton.TabIndex = 0;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = false;
@@ -501,9 +522,10 @@
             this.ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClearButton.Font = new System.Drawing.Font("Airstrike", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClearButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.ClearButton.Location = new System.Drawing.Point(22, 8);
+            this.ClearButton.Location = new System.Drawing.Point(25, 10);
+            this.ClearButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(121, 47);
+            this.ClearButton.Size = new System.Drawing.Size(136, 59);
             this.ClearButton.TabIndex = 0;
             this.ClearButton.Text = "Clear";
             this.ClearButton.UseVisualStyleBackColor = false;
@@ -511,16 +533,17 @@
             // 
             // LogForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.ClientSize = new System.Drawing.Size(818, 720);
+            this.ClientSize = new System.Drawing.Size(920, 900);
             this.Controls.Add(this.TimerLabel);
             this.Controls.Add(this.ButtonPanel);
             this.Controls.Add(this.CallerTextBox);
             this.Controls.Add(this.StateCountyPanel);
             this.Controls.Add(this.ProbSolPanel);
             this.Controls.Add(this.CallerLabel);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "LogForm";
             this.Text = "LogForm";
             this.ProbSolPanel.ResumeLayout(false);

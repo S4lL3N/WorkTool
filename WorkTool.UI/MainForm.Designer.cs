@@ -52,8 +52,9 @@
             this.MenuPanel.Controls.Add(this.LogoPictureBox);
             this.MenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuPanel.Location = new System.Drawing.Point(0, 0);
+            this.MenuPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MenuPanel.Name = "MenuPanel";
-            this.MenuPanel.Size = new System.Drawing.Size(226, 761);
+            this.MenuPanel.Size = new System.Drawing.Size(254, 951);
             this.MenuPanel.TabIndex = 0;
             // 
             // ButtonsFlowLayoutPanel
@@ -63,9 +64,10 @@
             this.ButtonsFlowLayoutPanel.Controls.Add(this.SQLButton);
             this.ButtonsFlowLayoutPanel.Controls.Add(this.InfoButton);
             this.ButtonsFlowLayoutPanel.Controls.Add(this.SettingButton);
-            this.ButtonsFlowLayoutPanel.Location = new System.Drawing.Point(0, 221);
+            this.ButtonsFlowLayoutPanel.Location = new System.Drawing.Point(0, 276);
+            this.ButtonsFlowLayoutPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ButtonsFlowLayoutPanel.Name = "ButtonsFlowLayoutPanel";
-            this.ButtonsFlowLayoutPanel.Size = new System.Drawing.Size(226, 451);
+            this.ButtonsFlowLayoutPanel.Size = new System.Drawing.Size(254, 564);
             this.ButtonsFlowLayoutPanel.TabIndex = 1;
             // 
             // LogButton
@@ -76,9 +78,10 @@
             this.LogButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LogButton.Font = new System.Drawing.Font("Sea-Dog Italic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LogButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.LogButton.Location = new System.Drawing.Point(3, 3);
+            this.LogButton.Location = new System.Drawing.Point(3, 4);
+            this.LogButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LogButton.Name = "LogButton";
-            this.LogButton.Size = new System.Drawing.Size(223, 75);
+            this.LogButton.Size = new System.Drawing.Size(251, 94);
             this.LogButton.TabIndex = 0;
             this.LogButton.Text = "Logging";
             this.LogButton.UseVisualStyleBackColor = false;
@@ -92,9 +95,10 @@
             this.SQLButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SQLButton.Font = new System.Drawing.Font("Sea-Dog Italic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SQLButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.SQLButton.Location = new System.Drawing.Point(3, 84);
+            this.SQLButton.Location = new System.Drawing.Point(3, 106);
+            this.SQLButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SQLButton.Name = "SQLButton";
-            this.SQLButton.Size = new System.Drawing.Size(223, 75);
+            this.SQLButton.Size = new System.Drawing.Size(251, 94);
             this.SQLButton.TabIndex = 0;
             this.SQLButton.Text = "SQL";
             this.SQLButton.UseVisualStyleBackColor = false;
@@ -108,9 +112,10 @@
             this.InfoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.InfoButton.Font = new System.Drawing.Font("Sea-Dog Italic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.InfoButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.InfoButton.Location = new System.Drawing.Point(3, 165);
+            this.InfoButton.Location = new System.Drawing.Point(3, 208);
+            this.InfoButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.InfoButton.Name = "InfoButton";
-            this.InfoButton.Size = new System.Drawing.Size(223, 75);
+            this.InfoButton.Size = new System.Drawing.Size(251, 94);
             this.InfoButton.TabIndex = 0;
             this.InfoButton.Text = "Info";
             this.InfoButton.UseVisualStyleBackColor = false;
@@ -124,9 +129,10 @@
             this.SettingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SettingButton.Font = new System.Drawing.Font("Sea-Dog Italic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SettingButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.SettingButton.Location = new System.Drawing.Point(3, 246);
+            this.SettingButton.Location = new System.Drawing.Point(3, 310);
+            this.SettingButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SettingButton.Name = "SettingButton";
-            this.SettingButton.Size = new System.Drawing.Size(223, 75);
+            this.SettingButton.Size = new System.Drawing.Size(251, 94);
             this.SettingButton.TabIndex = 0;
             this.SettingButton.Text = "Settings";
             this.SettingButton.UseVisualStyleBackColor = false;
@@ -138,9 +144,10 @@
             this.LogoPictureBox.ErrorImage = null;
             this.LogoPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LogoPictureBox.Image")));
             this.LogoPictureBox.ImageLocation = "";
-            this.LogoPictureBox.Location = new System.Drawing.Point(35, 47);
+            this.LogoPictureBox.Location = new System.Drawing.Point(39, 59);
+            this.LogoPictureBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LogoPictureBox.Name = "LogoPictureBox";
-            this.LogoPictureBox.Size = new System.Drawing.Size(217, 215);
+            this.LogoPictureBox.Size = new System.Drawing.Size(244, 269);
             this.LogoPictureBox.TabIndex = 0;
             this.LogoPictureBox.TabStop = false;
             // 
@@ -151,9 +158,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DisplayPanel.Controls.Add(this.GreetingLabel2);
             this.DisplayPanel.Controls.Add(this.greetingsLabel);
-            this.DisplayPanel.Location = new System.Drawing.Point(226, 0);
+            this.DisplayPanel.Location = new System.Drawing.Point(254, 0);
+            this.DisplayPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.DisplayPanel.Name = "DisplayPanel";
-            this.DisplayPanel.Size = new System.Drawing.Size(836, 756);
+            this.DisplayPanel.Size = new System.Drawing.Size(940, 945);
             this.DisplayPanel.TabIndex = 1;
             // 
             // GreetingLabel2
@@ -162,9 +170,9 @@
             this.GreetingLabel2.AutoSize = true;
             this.GreetingLabel2.Font = new System.Drawing.Font("Airstrike", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GreetingLabel2.ForeColor = System.Drawing.Color.White;
-            this.GreetingLabel2.Location = new System.Drawing.Point(228, 180);
+            this.GreetingLabel2.Location = new System.Drawing.Point(256, 225);
             this.GreetingLabel2.Name = "GreetingLabel2";
-            this.GreetingLabel2.Size = new System.Drawing.Size(318, 25);
+            this.GreetingLabel2.Size = new System.Drawing.Size(376, 29);
             this.GreetingLabel2.TabIndex = 0;
             this.GreetingLabel2.Text = "By: Shae Allen 2022";
             // 
@@ -174,21 +182,22 @@
             this.greetingsLabel.AutoSize = true;
             this.greetingsLabel.Font = new System.Drawing.Font("Airstrike", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.greetingsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-            this.greetingsLabel.Location = new System.Drawing.Point(131, 128);
+            this.greetingsLabel.Location = new System.Drawing.Point(147, 160);
             this.greetingsLabel.Name = "greetingsLabel";
-            this.greetingsLabel.Size = new System.Drawing.Size(526, 35);
+            this.greetingsLabel.Size = new System.Drawing.Size(631, 42);
             this.greetingsLabel.TabIndex = 0;
             this.greetingsLabel.Text = "BIS Land Records Tool";
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.ClientSize = new System.Drawing.Size(1065, 761);
+            this.ClientSize = new System.Drawing.Size(1198, 951);
             this.Controls.Add(this.DisplayPanel);
             this.Controls.Add(this.MenuPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MainForm";
             this.Text = "BIS Land Records Tool";
             this.MenuPanel.ResumeLayout(false);

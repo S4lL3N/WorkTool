@@ -40,12 +40,14 @@
             this.ClearButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.StatmentRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.DatabaseButton = new System.Windows.Forms.Button();
             this.OptionsPanel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // OptionsPanel
             // 
+            this.OptionsPanel.Controls.Add(this.DatabaseButton);
             this.OptionsPanel.Controls.Add(this.Tracking_checkBox);
             this.OptionsPanel.Controls.Add(this.Tracking_textBox);
             this.OptionsPanel.Controls.Add(this.Batch_textBox);
@@ -214,6 +216,22 @@
             this.StatmentRichTextBox.Text = "";
             this.StatmentRichTextBox.TextChanged += new System.EventHandler(this.StatmentRichTextBox_TextChanged);
             // 
+            // DatabaseButton
+            // 
+            this.DatabaseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.DatabaseButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.DatabaseButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.DatabaseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DatabaseButton.Font = new System.Drawing.Font("Airstrike", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DatabaseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
+            this.DatabaseButton.Location = new System.Drawing.Point(23, 203);
+            this.DatabaseButton.Name = "DatabaseButton";
+            this.DatabaseButton.Size = new System.Drawing.Size(136, 53);
+            this.DatabaseButton.TabIndex = 5;
+            this.DatabaseButton.Text = "Open DB";
+            this.DatabaseButton.UseVisualStyleBackColor = false;
+            this.DatabaseButton.Click += new System.EventHandler(this.DatabaseButton_Click);
+            // 
             // SQLForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -245,5 +263,6 @@
         private System.Windows.Forms.TextBox Batch_textBox;
         private System.Windows.Forms.TextBox Tracking_textBox;
         private System.Windows.Forms.CheckBox Tracking_checkBox;
+        private System.Windows.Forms.Button DatabaseButton;
     }
 }

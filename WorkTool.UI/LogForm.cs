@@ -28,6 +28,8 @@ namespace WorkTool.UI
         string pathToLogFile = Settings.Default["LogFilePath"].ToString();
         InfoForm infoForm = new InfoForm();
         Stopwatch stopwatch;
+        bool instBox = false;
+        bool batchbox = false;
         
 
         public string instNum { get; set; }
@@ -222,7 +224,9 @@ namespace WorkTool.UI
             Batch_textBox.ForeColor = Color.Red;
             Batch_textBox.TextAlign = HorizontalAlignment.Center;
             Batch_textBox.Text = "Batch #";
-            
+            instBox = false;
+            batchbox = false;
+
 
 
         }
@@ -253,6 +257,8 @@ namespace WorkTool.UI
             Batch_textBox.ForeColor = Color.Red;
             Batch_textBox.TextAlign = HorizontalAlignment.Center;
             Batch_textBox.Text = "Batch #";
+            instBox = false;
+            batchbox = false;
         }
 
         public void LogCall()
@@ -318,14 +324,24 @@ namespace WorkTool.UI
        
         private void Inst_textBox_MouseDown(object sender, MouseEventArgs e)
         {
-            Inst_textBox.ForeColor = Color.White;
-            Inst_textBox.Text = "";
+            if(instBox == false)
+            {
+                Inst_textBox.ForeColor = Color.White;
+                Inst_textBox.Text = "";
+                instBox = true;
+            }
+            
         }
 
         private void Batch_textBox_MouseDown(object sender, MouseEventArgs e)
         {
-            Batch_textBox.ForeColor = Color.White;
-            Batch_textBox.Text = "";
+            if (batchbox == false)
+            {
+                Batch_textBox.ForeColor = Color.White;
+                Batch_textBox.Text = "";
+                batchbox = true;
+            }
+            
         }
         
     }

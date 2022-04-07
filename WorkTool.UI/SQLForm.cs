@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WorkTool.Logic;
+using System.Diagnostics;
 
 namespace WorkTool.UI
 {
@@ -20,6 +21,8 @@ namespace WorkTool.UI
         string batchNumber;
         string _instrument;
         string trackingNum;
+        static string databaseSoftware;
+        
         
 
 
@@ -48,6 +51,21 @@ namespace WorkTool.UI
             {
                 Tracking_checkBox.Visible = false;
                 Tracking_textBox.Visible = false;
+            }
+          
+            if (CommandComboBox.Text.Equals("Change Password"))
+            {
+                BatchCheckBox.Visible = false;
+                //InstCheckBox.Text = "Name";
+                InstCheckBox.Visible = false;
+
+
+            }
+            else
+            {
+                BatchCheckBox.Visible = true;
+                InstCheckBox.Visible = true;
+                //InstCheckBox.Text = "Instrument number";
             }
         }
 
@@ -92,6 +110,7 @@ namespace WorkTool.UI
         {
             KeyTextBox.Text = "";
             InstCheckBox.Checked = false;
+            InstCheckBox.Visible = true;
             BatchCheckBox.Checked = false;
             Tracking_textBox.Visible = false;
             Tracking_checkBox.Visible = false;
@@ -203,6 +222,42 @@ namespace WorkTool.UI
                 Clipboard.SetText(output);
                 return output;
             }
+            if (comboBoxValue.Equals("EFile via Tracking Num."))
+            {
+                output = SQLStatements.EfileTrackingNumber(trackingNum);
+                //saves to clipboard
+                Clipboard.SetText(output);
+                return output;
+            }
+            if (comboBoxValue.Equals("Image Details"))
+            {
+                output = SQLStatements.ImageDetails(_instrument);
+                //saves to clipboard
+                Clipboard.SetText(output);
+                return output;
+            }
+            if (comboBoxValue.Equals("Change Password"))
+            {
+                output = SQLStatements.Password(_instrument);
+                //saves to clipboard
+                Clipboard.SetText(output);
+                return output;
+            }
+            if (comboBoxValue.Equals("Master Settings"))
+            {
+                output = SQLStatements.MasterSettings();
+                //saves to clipboard
+                Clipboard.SetText(output);
+                return output;
+            }
+            if (comboBoxValue.Equals("Printer and Term Setup"))
+            {
+                output = SQLStatements.PrinterAndTerminalSettings(_instrument);
+                //saves to clipboard
+                Clipboard.SetText(output);
+                return output;
+            }
+            
             else
             {
                 output = "";
@@ -215,6 +270,56 @@ namespace WorkTool.UI
         {
 
         }
-        
+
+        private void DatabaseButton_Click(object sender, EventArgs e)
+        {
+            if (databaseSoftware.Equals("Workbench"))
+            {
+                Process workB = new Process();
+                Process[] workProcesses = Process.GetProcessesByName("");
+                workB.StartInfo.FileName = @"C:\Program Files\MySQL\MySQL Workbench 6.3 CE\\MySQLWorkbench.exe";
+                if (workProcesses.Length == 0)
+                {
+                    //mssql.Start();
+                    workB.Start();
+
+                }
+                else
+                {
+                    //mssql = processes[0];
+                    workB = workProcesses[0];
+                }
+            }
+            if (databaseSoftware.Equals("MSSQL-SQLStudio"))
+            {
+                Process mssql = new Process();
+                Process[] processes = Process.GetProcessesByName("");
+                //Process workB = new Process();
+                //Process[] workProcesses = Process.GetProcessesByName("");
+
+                //workB.StartInfo.FileName = @"C:\Program Files\MySQL\MySQL Workbench 6.3 CE\\MySQLWorkbench.exe";
+                mssql.StartInfo.FileName = "C:\\Program Files (x86)\\Microsoft SQL Server Management Studio 18\\Common7\\IDE\\ssms.exe";
+                if (processes.Length == 0)
+                {
+                    mssql.Start();
+                    //workB.Start();
+
+                }
+                else
+                {
+                    mssql = processes[0];
+                    //workB = workProcesses[0];
+                }
+            }
+
+            
+            
+            
+        }
+
+        public static void SetDatabaseSoftware(string software)
+        {
+            databaseSoftware = software;
+        }
     }
 }

@@ -18,6 +18,8 @@ namespace WorkTool.UI
     {
         //string pathToJSONData = @"C:\Users\S4lL3\Desktop\WorkTool\JSONCountyData";
         string pathToJSONData = Settings.Default["JSONPath"].ToString();
+        public string databaseSoftware { get; set; }
+
         public InfoForm()
         {
             InitializeComponent();
@@ -80,7 +82,9 @@ namespace WorkTool.UI
                         State_Label.Text = searchCounties[i].state;
                         OS_Label.Text = searchCounties[i].os;
                         NumberTextBox.Text = searchCounties[i].number;
-                        Database_Label.Text=searchCounties[i].database;
+                        Database_Label.Text= searchCounties[i].database;
+                        databaseSoftware = searchCounties[i].database;
+                        SQLForm.SetDatabaseSoftware(databaseSoftware);
                         AddressTextBox.Text = searchCounties[i].address;
                         UsernameTextBox.Text = searchCounties[i].username;
                         PasswordTextBox.Text = searchCounties[i].password;

@@ -257,7 +257,14 @@ namespace WorkTool.UI
                 Clipboard.SetText(output);
                 return output;
             }
-            
+            if (comboBoxValue.Equals("Certification date"))
+            {
+                output = SQLStatements.CertificationDate();
+                Clipboard.SetText(output);
+                return output;
+            }
+
+
             else
             {
                 output = "";

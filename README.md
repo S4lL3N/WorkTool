@@ -1,2 +1,2 @@
 # WorkTool
-![My Image](LoggingTab.png)
+![Logging Tab](LoggingTab.png)
